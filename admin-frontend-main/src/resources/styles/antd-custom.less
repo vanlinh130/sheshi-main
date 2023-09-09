@@ -1,0 +1,83 @@
+@import "antd/dist/antd.less";
+
+@primary-color: #bc2029;
+@height-base: 40px;
+@table-header-bg: @primary-color;
+@table-header-color: #ffffff;
+@table-header-cell-split-color: rgba(255, 255, 255, 0.6);
+@btn-height-sm: 30px;
+// @component-background: @primary-color;
+// @popover-background: @primary-color;
+
+@table-header-sort-bg: #bc20296c;
+@table-header-sort-active-bg: #bc202960;
+
+@pagination-item-bg-active: @primary-color;
+
+// @heading-color: rgba(255, 255, 255, 0.85);
+
+// Collapse
+@collapse-header-bg: @primary-color;
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.ant-layout-content {
+  flex: 1;
+}
+
+.ant-menu-inline-collapsed-tooltip {
+  .ant-tooltip-inner {
+    background-color: @primary-color;
+
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .ant-tooltip-arrow>.ant-tooltip-arrow-content {
+    background-color: @primary-color;
+  }
+}
+
+.ant-collapse {
+  color: #ffffff;
+}
+
+.ant-select {
+  width: 100%;
+}
+
+.ant-pagination {
+  .ant-pagination-item-active {
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+
+.ant-table-filter-trigger{
+  font-size: 16px;
+}
+
+.ant-table-thead th.ant-table-column-has-sorters:hover, .ant-table-thead th.ant-table-column-sort{
+  background-color: @primary-color;
+  color: #ffffff;
+
+  span{
+    color: #ffffff;
+  }
+
+}

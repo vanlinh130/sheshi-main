@@ -1,0 +1,104 @@
+.table-custom {
+    .data-ellipsis {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.ant-collapse {
+    border: none;
+    box-shadow: var(--box-shadow);
+    @include br(0.25rem);
+    overflow: hidden;
+    background: var(--main-bg);
+    color: var(--txt-color);
+}
+.ant-collapse > .ant-collapse-item {
+    border: none;
+}
+.ant-collapse-content-box {
+    background: var(--main-bg);
+    color: var(--txt-color);
+}
+.ant-collapse-content {
+    border: none;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--txt-color);
+}
+
+.ant-table {
+    box-shadow: var(--box-shadow);
+    @include br(0.25rem);
+    overflow: hidden;
+    background: var(--main-bg);
+    color: var(--txt-color);
+}
+.ant-table-thead > tr > th {
+    background: var(--main-bg);
+    color: var(--txt-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ant-table-thead
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    background: var(--border-color);
+}
+
+.ant-table-placeholder {
+    background: var(--main-bg);
+    color: var(--txt-color);
+
+    &:hover {
+        color: var(--txt-color-1) !important;
+
+        .ant-empty-description {
+            color: var(--txt-color);
+        }
+    }
+}
+
+.ant-pagination {
+    margin-top: 30px;
+}
+
+.ant-empty-description {
+    color: var(--txt-color);
+}
+
+.text__cut {
+    span {
+        max-width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.ant-table-tbody > tr > td {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table-product-child {
+    width: 100%;
+    td {
+        padding: 15px;
+    }
+}
+
+[data-theme="dark"] {
+    .ant-empty-img-simple-ellipse,
+    .ant-empty-img-simple-path {
+        fill: transparent;
+    }
+}

@@ -1,0 +1,23 @@
+.ant-card {
+    color: var(--txt-color);
+    background: var(--main-bg);
+}
+
+.ant-card-meta-avatar {
+    font-size: 30px;
+    color: var(--main-color);
+}
+.ant-card-meta-detail > div:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.ant-card-meta-title {
+    color: var(--txt-color);
+}
+
+.ant-card-meta-description {
+    color: var(--txt-color-1);
+}
+
+[data-theme="dark"] {
+}

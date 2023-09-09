@@ -1,0 +1,99 @@
+.layout-component {
+  background: var(--second-bg);
+  min-height: 100vh;
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+a {
+  color: var(--txt-color);
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
+/*-----------------------------------------------------------
+  Page Layout - Sidebar, Chat API toggle interactions
+-----------------------------------------------------------*/
+
+.main-wrapper {
+  margin-top: 70px;
+  display: inline-block;
+  padding: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+#main-content {
+  margin-left: 260px;
+  display: block;
+}
+
+#main-content.sidebar_shift {
+  margin-left: 80px;
+  margin-right: 0px;
+
+  @include tablet {
+    margin-left: 0;
+  }
+}
+
+.ant-page-header {
+  @include tablet {
+    padding: 0;
+    padding-bottom: 60px;
+  }
+}
+
+.layout-btn-action {
+  text-align: right;
+  @include tablet {
+    width: 100%;
+    position: fixed;
+    background: var(--main-bg);
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.ant-page-header-heading-extra {
+  @include mobile {
+    display: none;
+  }
+}
+
+.ant-table-tbody > tr.ant-table-placeholder:hover > td {
+  background: var(--second-bg);
+}
+
+[data-theme="dark"] {
+  .ant-page-header-heading-title,
+  .ant-card-head-title,
+  .ant-radio-wrapper,
+  .ant-input-textarea-show-count {
+    color: var(--txt-color);
+  }
+
+  .ant-table-tbody > tr.ant-table-row:hover > td,
+  .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+    background: var(--second-bg);
+  }
+
+  .ant-table-cell-fix-left,
+  .ant-table-cell-fix-right {
+    background: var(--main-bg);
+  }
+
+  .ant-card-head,
+  .ant-table-tbody > tr > td {
+    border-bottom: 1px solid var(--border-color);
+  }
+}

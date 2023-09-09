@@ -1,0 +1,4 @@
+{
+  "API_URL": "http://localhost:3001",
+  "BSC_SCAN_URL": "https://testnet.bscscan.com"
+}

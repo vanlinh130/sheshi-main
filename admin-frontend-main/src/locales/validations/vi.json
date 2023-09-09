@@ -1,0 +1,12 @@
+{
+  "required": "Trường bắt buộc",
+  "email": "Email không hợp lệ",
+  "min": "Tối thiểu {{min}}",
+  "max": "Tối đa {{max}}",
+  "minLength": "Tối thiểu {{min}} kí tự",
+  "maxLength": "Tối đa {{max}} kí tự",
+  "password_not_match": "Mật khẩu không giống nhau",
+  "invalid": "Không hợp lệ",
+  "file_size_invalid": "Kích cỡ file không hợp lệ",
+  "unsupported_format": "Không hỗ trợ định dạng"
+}

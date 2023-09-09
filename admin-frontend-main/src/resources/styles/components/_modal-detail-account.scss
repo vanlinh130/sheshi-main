@@ -1,0 +1,41 @@
+.modal__detail-account {
+  .box__profile {
+    .box__avatar {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        border-radius: 50%;
+      }
+
+      .ant-image-mask {
+        border-radius: 50%;
+      }
+    }
+
+    .field-info {
+      label {
+        white-space: nowrap;
+      }
+
+      .detail-info {
+        word-break: break-word;
+      }
+    }
+  }
+
+  .box__kyc {
+    .img-kyc {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .ant-image-mask {
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+@mixin br($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin bs($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin tr($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+$mobile-width: 600px;
+$tablet-width: 1024px;
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+:root {
+    --main-bg: #ffffff;
+    --second-bg: #f8f9fa;
+    --nav-bg: #f8f9fa;
+    --txt-color: #222222;
+    --txt-color-1: #888888;
+    --color-white: #ffffff;
+    --txt-color-link: #bc2029;
+    --main-color: #bc2029;
+    --second-color: #2188db;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --sidebar-width: 280px;
+    --sidebar-width-min: 80px;
+    --border-color: #dddddd;
+}
+
+[data-theme='dark'] {
+    --main-bg: #343a40;
+    --second-bg: #212529;
+    --nav-bg: #495057;
+    --txt-color: #ffffff;
+    --txt-color-1: #888888;
+    --txt-color-2: #343a40;
+    --color-white: #ffffff;
+    --txt-color-link: #ffffff;
+    --main-color: #bc2029;
+    --second-color: #2188db;
+    --box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    --sidebar-width: 280px;
+    --sidebar-width-min: 80px;
+    --border-color: #212529;
+}
+
+body {
+    color: var(--txt-color);
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.text-error {
+    text-align: left;
+    color: #ff3333;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.label-field {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+svg {
+    vertical-align: baseline;
+}
+
+.text-break-ellipsis {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul {
+    list-style: none;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.tox-statusbar__branding {
+    display: none !important;
+}
+// @import "reset-css";
+@import './components/index.scss';
+@import './pages/index.scss';

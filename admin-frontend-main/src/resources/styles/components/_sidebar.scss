@@ -1,0 +1,207 @@
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    display: none;
+  }
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+[data-theme="dark"] {
+  .logo__text {
+    filter: invert(0);
+  }
+}
+
+/*----------------------------------------
+  Sidebar Main Menu
+------------------------------------------*/
+.page-sidebar {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 90;
+  padding: 0px;
+  background-color: var(--main-bg);
+  min-height: 100%;
+  box-shadow: inset -1px 0 0 rgba(18, 38, 63, 0.05);
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+
+    .logo-area {
+      margin-bottom: 15px;
+    }
+  }
+
+  .nav-item__sub {
+    overflow: hidden;
+  }
+
+  .is-open-menu {
+    display: block;
+  }
+
+  .wraplist {
+    width: 100%;
+    &__item {
+      .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        width: 100%;
+
+        .nav-item {
+          cursor: pointer;
+          display: block;
+          padding: 0px 15px;
+          line-height: 50px;
+          height: 50px;
+          margin-bottom: 5px;
+
+          a {
+            display: block;
+            width: 100%;
+          }
+
+          &__img {
+            font-size: 20px;
+          }
+
+          &__title {
+            margin-left: 15px;
+            font-size: 17px;
+          }
+
+          &__arrow {
+            font-size: 10px;
+            float: right;
+            color: var(--txt-color-1);
+          }
+
+          &__sub {
+            margin-left: 30px;
+            li {
+              padding: 0px 15px 0px 20px;
+              margin-bottom: 5px;
+              a {
+                line-height: 40px;
+              }
+
+              &:hover,
+              &.open {
+                background: var(--nav-bg);
+                color: var(--main-color);
+                @include br(5px);
+                a {
+                  color: var(--txt-color-link);
+                  width: 100%;
+                  display: block;
+                }
+              }
+            }
+          }
+
+          &:hover,
+          &.open {
+            background: var(--nav-bg);
+            color: var(--txt-color-link);
+            @include br(5px);
+
+            a {
+              color: var(--txt-color-link);
+
+              &.open {
+                background: var(--nav-bg);
+                color: var(--txt-color-link);
+                @include br(5px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.collapseit {
+    width: 80px;
+    margin-left: 0px !important;
+    z-index: 99;
+    -moz-transition: width 0.3s ease-in-out, left 0.4s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out, left 0.4s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out, left 0.4s ease-in-out;
+    -o-transition: width 0.3s ease-in-out, left 0.4s ease-in-out;
+    transition: width 0.3s ease-in-out, left 0.4s ease-in-out;
+
+    .logo {
+      &__text {
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      width: 0;
+    }
+
+    .nav-item {
+      text-align: center;
+      &__title,
+      &__arrow {
+        display: none;
+      }
+    }
+
+    .nav-item__sub.is-open-menu {
+      height: 0 !important;
+    }
+
+    .page-sidebar__wrapper .logo-area {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+.absolute {
+  position: fixed !important;
+
+  .wraplist {
+    // overflow: auto;
+  }
+}

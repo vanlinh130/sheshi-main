@@ -1,0 +1,65 @@
+/*----------------------------------------
+  Page Top Bar
+------------------------------------------*/
+
+.page-topbar {
+    min-height: 60px;
+    position: fixed;
+    width: calc(100% - 260px);
+    background: var(--second-bg);
+    top: 0px;
+    left: 260px;
+    z-index: 999;
+    max-height: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 60px;
+
+    &.sidebar_shift {
+        width: calc(100% - 80px);
+        left: 80px;
+
+        @include tablet {
+            left: 0px;
+            width: 100%;
+        }
+    }
+
+    @include tablet {
+        width: 100%;
+        background: var(--main-color);
+
+        .sidebar_toggle {
+            color: var(--color-white);
+        }
+    }
+
+    &__left {
+        float: left;
+    }
+
+    .sidebar_toggle {
+        font-size: 20px;
+    }
+    .pull-right {
+        float: right;
+        padding: 0 15px;
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            align-items: center;
+
+            li {
+                margin-left: 15px;
+                span.anticon-setting {
+                    font-size: 20px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
