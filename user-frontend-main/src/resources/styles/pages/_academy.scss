@@ -1,0 +1,39 @@
+.academy-page {
+    font-size: 19px;
+
+    &__title {
+        small {
+        }
+
+        h2 {
+            font-size: 43px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    .col-lg-6 {
+        padding: 0 60px;
+
+        @include mobile {
+            padding: 0 15px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.gal-list {
+    .slick-slide {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    .slick-current {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

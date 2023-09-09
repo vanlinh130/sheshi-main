@@ -1,0 +1,32 @@
+.login-page {
+  .form-submit {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 30px;
+    background: var(--background-color-1);
+
+    label {
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .box__type-login {
+      button {
+        opacity: 0.5;
+        transition: all 0.3s;
+
+        &.active {
+          opacity: 1;
+          transform: scale(1.1);
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--primary-color);
+      color: var(--txt-color-2);
+    }
+  }
+}

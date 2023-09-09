@@ -1,0 +1,13 @@
+.page-404 {
+    background: var(--background-color);
+    &__box {
+        text-align: center;
+        display: block;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        h1 {
+            font-size: 6.5rem;
+        }
+    }
+}

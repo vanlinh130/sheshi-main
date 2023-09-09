@@ -1,0 +1,14 @@
+{
+  "required": "Required field",
+  "email": "Email is invalid",
+  "min": "Minimum {{min}}",
+  "max": "Maximum {{max}}",
+  "minLength": "Minimum {{min}} character(s)",
+  "maxLength": "Maximum {{max}} character(s)",
+  "length": "Length {{length}} character(s)",
+  "password_not_match": "Password not match",
+  "invalid": "is invalid",
+  "file_size_invalid": "Size file is invalid",
+  "unsupported_format": "Unsupported format",
+  "referral_not_in_correct_format": "Referral ID isn't in correct format"
+}

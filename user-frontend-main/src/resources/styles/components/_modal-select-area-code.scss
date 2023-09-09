@@ -1,0 +1,55 @@
+.modal-select-area-code {
+  .modal-body {
+    padding: 0;
+  }
+
+  .box-search {
+    padding: 0 1rem;
+    padding-top: 1rem;
+  }
+
+  .box-countries {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    li {
+      padding: 5px 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      .box__country-image {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+
+        img {
+          box-sizing: border-box;
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 999px;
+        }
+      }
+
+      .box__name-country {
+        flex: 1;
+      }
+
+      &.active {
+        color: var(--primary-color);
+      }
+
+      &:hover {
+        background-color: var(--background-color);
+        transition: all 0.3s;
+      }
+    }
+  }
+}

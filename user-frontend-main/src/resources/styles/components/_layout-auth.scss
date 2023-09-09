@@ -1,0 +1,28 @@
+.layout-auth {
+  overflow: hidden;
+
+  .box-form {
+    padding: 40px;
+    box-shadow: var(--box-shadow);
+    height: 100vh;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 425px) {
+      padding: 40px 20px;
+
+      background-image: none;
+    }
+  }
+
+  .carousel-item {
+    img {
+      object-fit: cover;
+    }
+  }
+}

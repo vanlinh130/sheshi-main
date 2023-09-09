@@ -1,0 +1,63 @@
+.order-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.order-item {
+    background: var(--background-color-1);
+    margin-bottom: 30px;
+    @include br(5px);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include bs(rgba(0, 0, 0, 0.1) 0px 4px 12px);
+
+    &__text {
+        width: calc(100% - 100px);
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+
+        &__act {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            &__status {
+                span {
+                    &.done {
+                        color: green;
+                    }
+
+                    &.close {
+                        color: red;
+                    }
+                }
+            }
+
+            .btn {
+                height: 30px;
+                padding: 0;
+                font-size: 15px;
+
+                @include mobile {
+                    margin-top: 10px;
+                }
+            }
+
+            @include mobile {
+                display: block;
+            }
+        }
+    }
+
+    &__img {
+        width: 100px;
+        img {
+            width: 80px;
+        }
+    }
+}

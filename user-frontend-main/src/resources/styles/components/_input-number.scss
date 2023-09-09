@@ -1,0 +1,56 @@
+.input-number {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    @include br(20px);
+    margin: 0 auto;
+
+    span,
+    input {
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        display: inline-block;
+        background-color: var(--primary-color);
+        height: 100%;
+        width: 40px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+        color: var(--txt-color-2);
+        letter-spacing: -1px;
+        border: none;
+
+        &:focus,
+        &:active,
+        &:focus-visible {
+            @include bs(none);
+            border: none;
+            outline: none;
+        }
+    }
+
+    button {
+        display: inline-block;
+        width: 50px;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        color: var(--txt-color-2);
+        font-size: 20px;
+        cursor: pointer;
+        background-color: var(--primary-color);
+        transition: background-color 0.2s ease;
+
+        &:nth-of-type(1) {
+            padding-right: 20px;
+        }
+
+        &:nth-of-type(2) {
+            padding-left: 20px;
+        }
+    }
+}

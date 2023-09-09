@@ -1,0 +1,49 @@
+.phone-input-component {
+  display: flex;
+  align-items: center;
+
+  .box-phone-code {
+    background-color: var(--background-input);
+    box-shadow: none;
+    outline: none;
+    color: var(--txt-color);
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 0.3rem;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+
+    .flag-icon {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+      border-radius: 999px;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+
+    .text__phone-code {
+      font-size: 10px;
+      margin-right: 10px;
+    }
+
+    i {
+      font-size: 10px;
+      margin-right: 10px;
+    }
+
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: var(--background-input);
+      color: var(--txt-color);
+      box-shadow: none;
+      border-color: #86b7fe;
+    }
+  }
+}

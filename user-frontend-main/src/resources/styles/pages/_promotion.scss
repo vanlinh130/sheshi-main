@@ -1,0 +1,32 @@
+.promotions-page {
+    .promotion-list {
+        margin-bottom: 30px;
+
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+}
+.promotion-item {
+    background: var(--background-color-1);
+    @include br(5px);
+    padding: 15px;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    @include bs(rgba(0, 0, 0, 0.1) 0px 4px 12px);
+    margin: 15px;
+
+    &__img {
+        margin-right: 15px;
+        img {
+            width: 100px;
+        }
+    }
+
+    &__text {
+        &__name {
+            font-size: 19px;
+        }
+    }
+}

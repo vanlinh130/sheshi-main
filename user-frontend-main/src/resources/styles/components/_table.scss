@@ -1,0 +1,44 @@
+tbody, thead, td, tr, tfoot, td, th{
+    border-style: none !important;
+    border-top: none !important;
+}
+th,td{
+    text-align: center;
+}
+.table-custom{
+    white-space: nowrap;
+    min-width: 400px;
+    padding: 100px;
+    color: var(--txt-color);
+    margin: unset;
+    &-tbody {
+        background-color:  var(--background-input);
+        &-readmore{
+            cursor: pointer;
+            white-space: nowrap;
+            margin-left: 20px;
+            text-align: center;
+        }
+        &-name{
+            text-align: left;
+            padding: 8px 30px !important;
+        }
+    }
+}
+.table-scroll{
+    border-radius: 5px;
+    &-readmore{
+        background-color: var(--background-input);
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        &-icon{
+            cursor: pointer;
+        }
+    }
+
+}
+.thead-custom-name {
+    text-align: left;
+    padding: 8px 60px !important;
+}

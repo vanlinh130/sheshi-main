@@ -1,0 +1,28 @@
+.sign-up-page {
+  .form-submit {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 30px;
+    background: var(--background-color-1);
+
+    label {
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+    .btn-submit {
+      width: 100%;
+      background: var(--primary-color);
+      color: var(--txt-color-2);
+    }
+
+    .field {
+      &__txt-check-merchant {
+        font-size: 14px;
+      }
+
+      .link__direct-register-merchant {
+        margin: 5px 0;
+      }
+    }
+  }
+}

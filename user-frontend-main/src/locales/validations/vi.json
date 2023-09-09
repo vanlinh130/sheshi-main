@@ -1,0 +1,15 @@
+{
+  "required": "Trường bắt buộc",
+  "email": "Email không hợp lệ",
+  "min": "Tối thiểu {{min}}",
+  "max": "Tối đa {{max}}",
+  "minLength": "Tối thiểu {{min}} kí tự",
+  "maxLength": "Tối đa {{max}} kí tự",
+  "length": "Độ dài {{length}} kí tự",
+  "password_not_match": "Mật khẩu không giống nhau",
+  "invalid": "không hợp lệ",
+  "file_size_invalid": "Kích cỡ file không hợp lệ",
+  "unsupported_format": "Không hỗ trợ định dạng",
+  "referral_not_in_correct_format": "ID giới thiệu không đúng định dạng",
+  "username_validate": "Username không hợp lệ: Tối đa 30 ký tự và chỉ gồm chữ cái viết thường, số, .-_"
+}

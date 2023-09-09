@@ -1,0 +1,50 @@
+.custom-paging {
+    display: block;
+    margin: 0 auto;
+
+    .pagination {
+        background: transparent;
+        justify-content: center;
+        margin-top: 20px;
+
+        .page-item {
+            background: var(--background-color-2);
+            padding: 5px;
+            &:first-child {
+                -webkit-border-top-left-radius: 15px;
+                -webkit-border-bottom-left-radius: 15px;
+                -moz-border-radius-topleft: 15px;
+                -moz-border-radius-bottomleft: 15px;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }
+
+            &:last-child {
+                -webkit-border-top-right-radius: 15px;
+                -webkit-border-bottom-right-radius: 15px;
+                -moz-border-radius-topright: 15px;
+                -moz-border-radius-bottomright: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            .page-link {
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border-color: transparent;
+                color: var(--txt-color);
+                @include br(40px);
+            }
+            &.active,
+            &:hover {
+                .page-link {
+                    background-color: var(--primary-color);
+                    border-color: var(--primary-color);
+                    @include br(100%);
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.layout-normal {
+    margin-top: 90px;
+
+    @include tablet {
+        margin-top: 60px;
+    }
+
+    .layout__content {
+        min-height: 350px;
+    }
+}

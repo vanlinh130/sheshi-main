@@ -1,0 +1,95 @@
+{
+  "plugins": ["react", "react-hooks", "prettier"],
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es2021": true
+  },
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    "react/display-name": "off",
+    "array-bracket-spacing": ["error", "always"],
+    "space-before-function-paren": ["error", "always"],
+    "quotes": [2, "single"],
+    "react/jsx-uses-react": 2,
+    "template-curly-spacing": ["error", "never"],
+    "react/state-in-constructor": 0,
+    "no-nested-ternary": 0,
+    "prefer-const": 0,
+    "import/no-cycle": 0,
+    "react/sort-comp": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/destructuring-assignment": 0,
+    "react/no-array-index-key": 0,
+    "react/button-has-type": 0,
+    "react/prop-types": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-filename-extension": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "no-tabs": 0,
+    "global-require": 0,
+    "object-curly-newline": 0,
+    "max-len": 0,
+    "quote-props": 0,
+    "no-void": 0,
+    "comma-dangle": ["error", "never"],
+    "semi": ["error", "never"],
+    "no-console": 1,
+    "no-param-reassign": 0,
+    "class-methods-use-this": 0,
+    "arrow-body-style": ["error", "as-needed"],
+    "dot-notation": [
+      "error",
+      {
+        "allowPattern": "^[a-z]+(_[a-z]+)+$"
+      }
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTaggedTemplates": true
+      }
+    ],
+    "func-names": ["error", "never"],
+    "import/prefer-default-export": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [2, "unix"],
+    "curly": [2, "all"],
+    "eqeqeq": [2, "smart"],
+    "one-var-declaration-per-line": [2, "always"],
+    "new-cap": 2,
+    "no-case-declarations": 0,
+    "react-hooks/exhaustive-deps": 2,
+    "react-hooks/rules-of-hooks": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ]
+}

@@ -1,0 +1,46 @@
+.contact {
+    font-size: 17px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    .spacing_lager {
+        padding: 0 60px;
+
+        @include mobile {
+            padding: 0 15px;
+        }
+    }
+
+    &__map {
+        iframe {
+            width: 100% !important;
+            height: 250px;
+        }
+    }
+
+    &__info {
+        @include tablet {
+            display: none;
+        }
+
+        .social-icons {
+            li {
+                a {
+                    color: var(--txt-color);
+                    background: var(--background-color-2);
+                    width: 45px;
+                    height: 45px;
+                    @include br(45px);
+                    line-height: 50px;
+                    text-align: center;
+                    padding: 0;
+
+                    &:hover {
+                        color: var(--txt-white);
+                        background: var(--background-color-3);
+                    }
+                }
+            }
+        }
+    }
+}

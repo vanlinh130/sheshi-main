@@ -1,0 +1,192 @@
+.footer {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: var(--background-color-3);
+    color: var(--txt-color-2);
+
+    &__logo {
+        img {
+            max-width: 130px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__text {
+        padding-bottom: 30px;
+    }
+
+    &__menu {
+        margin-bottom: 30px;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                display: block;
+                margin-bottom: 15px;
+                a {
+                    font-weight: bold;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: var(--txt-color-2);
+
+                    &:hover,
+                    &.active {
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: none;
+        &__cert {
+            text-align: right;
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+            display: inline-block;
+            color: var(--txt-color-2);
+            padding: 5px;
+
+            i {
+                font-size: 21px;
+            }
+
+            &:hover,
+            .active {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.footer-mobile-menu {
+    display: none;
+    padding-bottom: 0px;
+    min-height: 56px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    @include bs(rgba(149, 157, 165, 0.6) 0px 0.5rem 1rem 0px);
+    background-color: rgb(248, 249, 250);
+    transition: bottom 0.4s ease 0s;
+    z-index: 100;
+
+    justify-content: space-around;
+    align-items: center;
+
+    .menu-item {
+        position: relative;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background-position: center center;
+        transition: all 0.6s ease 0s;
+        min-height: 56px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: space-between;
+        justify-content: space-between;
+        -webkit-box-align: space-between;
+        align-items: center;
+        color: var(--txt-color);
+
+        .menu-icon {
+            font-size: 20px;
+        }
+
+        .notification {
+            position: relative;
+            display: inline-block;
+            .custom-badge {
+                background-color: rgb(235, 31, 58);
+                top: -5px;
+                left: 13px;
+                display: block;
+                position: absolute;
+                z-index: 1;
+                right: 8px;
+                width: 16px;
+                text-align: center;
+                height: 16px;
+                line-height: 16px;
+                color: var(--txt-color-2);
+                border-radius: 50%;
+                font-size: 8px;
+                transition-duration: 0.2s;
+                opacity: 1;
+                padding: 0px;
+                font-weight: 400;
+            }
+        }
+
+        .text-menu {
+            &--inactive {
+                text-align: center;
+                color: var(--txt-color);
+                height: auto;
+                font-size: 12px;
+                visibility: visible;
+            }
+
+            &--active {
+                transition: font-size 0.2s ease 0s;
+                height: auto;
+                font-size: 12px;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-mobile-menu {
+        display: flex;
+    }
+    .footer {
+        padding-bottom: 90px;
+        text-align: center;
+        &__menu {
+            margin-top: 0;
+        }
+
+        &__bottom {
+            &__cert {
+                text-align: center;
+            }
+
+            &__corp {
+                padding: 30px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-height: 600px) {
+    .footer-mobile-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+.about-page {
+    font-size: 19px;
+
+    .col-lg-6 {
+        padding: 0 60px;
+
+        @include mobile {
+            padding: 0 15px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
