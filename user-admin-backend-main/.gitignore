@@ -1,0 +1,16 @@
+.env
+node_modules/
+build/
+dist/
+logs/
+.idea/
+sessions/
+uploads/
+.DS_Store
+.nyc_output/
+coverage
+.coveralls.yml
+uploadsTest/
+package-lock.json
+yarn.lock
+dump.rdb

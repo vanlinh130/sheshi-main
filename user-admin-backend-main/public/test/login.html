@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1>Login Form</h1>
+    <div class="alert alert-danger d-none error" role="alert"></div>
+    <form class="login-form" autocomplete="off">
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input class="form-control" id="username" name="username" type="text" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" id="password" name="password" type="password" required aria-required="true">
+        </div>
+        <button type="submit" class="btn btn-primary">
+            Login
+        </button>
+        <button type="button" class="btn btn-info">
+            Get Information
+        </button>
+        <button type="button" class="btn btn-warning signOut">
+            Sign Out
+        </button>
+    </form>
+    <div class="information">
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        const errorEls = $('div.error');
+
+        $('button.btn-info').click(getUser);
+        $('button.signOut').click(signOut);
+
+        $("form.login-form").submit(function (e) {
+            const form = $(this);
+            errorEls.addClass('d-none');
+            $.ajax({
+                type: "POST",
+                url: '/api/auth/sign-in',
+                data: form.serialize()
+            }).then(function (resp) {
+                alert(JSON.stringify(resp));
+            }, function (err) {
+                console.log(err.statusText);
+                errorEls.html(err.statusText);
+                errorEls.removeClass('d-none');
+            });
+
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+        });
+
+        function getUser() {
+            $.ajax({
+                type: "GET",
+                url: '/api/user'
+            }).then(function (res) {
+                $('div.information').html('<textarea class="form-control" rows="10">' + JSON.stringify(res) + '</textarea>');
+            }, function (err) {
+                $('div.information').html(err.statusText);
+            });
+        }
+
+        function signOut() {
+            $.ajax({
+                type: "GET",
+                url: '/auth/sign-out'
+            }).then(function () {
+                $('div.information').html('Sign out success');
+            }, function (err) {
+                $('div.information').html(err.statusText);
+            });
+        }
+    });
+
+</script>
+</body>
+</html>
+

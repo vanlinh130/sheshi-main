@@ -1,0 +1,47 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+  ],
+  "rules": {
+    "camelcase": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off",
+    "no-mixed-operators": "off",
+    "max-len": "off",
+    "object-shorthand": "off",
+    "global-require": "off",
+    "no-unused-expressions": "off",
+    "class-methods-use-this": "off",
+    "arrow-body-style": "off",
+    "no-negated-condition": 0,
+    "import/prefer-default-export": 0,
+    "no-loop-func": 0,
+    "prefer-destructuring": 0,
+    "no-nested-ternary": 0,
+    "default-case": "off",
+    "no-console": [
+      "off"
+    ],
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-underscore-dangle": [
+      "off"
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ]
+  }
+}

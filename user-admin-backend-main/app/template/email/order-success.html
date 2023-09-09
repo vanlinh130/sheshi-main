@@ -1,0 +1,558 @@
+<!-- <div className="order-summary text-center">
+  <div>
+    <h3>THANK YOU</h3>
+    <p>Đơn đặt hàng của bạn đã hoàn tất.</p>
+  </div>
+  <div>
+    ORDER:&nbsp;
+    <span className="orderid highlight">{{ orderCode }}</span>
+  </div>
+  <div>Chúng tôi đã xác nhận đơn hàng của bạn.</div>
+  <div>
+    Nếu có bất kỳ thắc mắc về đơn hàng của bạn, vui lòng liên hệ
+    với chúng tôi hoặc dùng chức năng theo dõi đơn hàng
+  </div>
+</div> -->
+
+<table style="border:1px solid rgb(237,237,237)" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff">
+
+        <table valign="center" width="100%" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td style="text-align:center;padding:10px 0"><img border="0" height="90"
+                  src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/293977217_5483174148412355_2724785753535776253_n.jpg?stp=cp1_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=AXLxzZ6zBQEAX9L76DN&tn=QBlWX0ILMUT_CXcX&_nc_ht=scontent.fsgn2-3.fna&oh=00_AT9iq71mEe0bqRPkjSJ6rfgXSdJn-k_kOyZ1MUEGJeo0_Q&oe=62D6DF64"
+                  class="CToWUd"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td valign="top" width="45"></td>
+              <td style="font-family:Helvetica,'Arial',sans-serif;color:rgb(0,0,0);font-size:11px" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td height="15"><img style="display:block"
+                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                          alt="" border="0" height="15" width="20" class="CToWUd">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center">
+                        <div>
+                          <div>
+                            <h3>THANK YOU</h3>
+                            <p>Đơn đặt hàng của bạn đã hoàn tất.</p>
+                          </div>
+                          <div>Chúng tôi đã xác nhận đơn hàng của bạn.</div>
+                          <div>
+                            Nếu có bất kỳ thắc mắc về đơn hàng của bạn, vui lòng liên hệ
+                            với chúng tôi hoặc dùng chức năng theo dõi đơn hàng
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="15"><img style="display:block"
+                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                          alt="" border="0" height="15" width="20" class="CToWUd"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td style="font-size:12px;line-height:21px;font-weight:bold" align="left" valign="top"
+                                width="44%">Tổng cộng<br>
+                                <span style="font-size:28px;line-height:32px;font-weight:bold;color:#bc2029">₫
+                                  {{ total }}</span>
+                              </td>
+                              <td style="font-size:12px;line-height:21px;font-weight:bold" align="left" valign="top"
+                                width="56%">
+                                Ngày &nbsp;&nbsp;|&nbsp; Giờ<br>
+                                <span style="font-size:18px;font-weight:bold;color:#bc2029">{{ datetime }}</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td height="12"><img style="display:block"
+                                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                  alt="" border="0" height="12" width="20" class="CToWUd"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td valign="top" width="45"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td height="5"><img style="display:block"
+                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                  alt="" border="0" height="5" width="10" class="CToWUd"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table align="center" bgcolor="#f4f4f4" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td valign="top" width="45"><img style="display:block"
+                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                  alt="" border="0" height="10" width="20" class="CToWUd"></td>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="left" height="20"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="font-size:14px;font-weight:bold;color:#bc2029" align="left" width="55%">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td valign="top" width="200">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td style="font-size:14px;font-weight:bold;color:#bc2029" align="left" valign="top">
+                                CHI TIẾT ĐƠN HÀNG</td>
+                            </tr>
+                            <tr>
+                              <td align="center" height="10" valign="middle"><img style="display:block"
+                                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                  alt="" border="0" height="10" width="170" class="CToWUd"></td>
+                            </tr>
+                            <tr>
+                              <td valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="padding:0cm" align="left" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:10px;color:rgb(158,158,158);line-height:14px">Mã đơn hàng</span><br>
+                                                                <span
+                                                                  style="font-size:12px;line-height:16px;font-weight:bold">{{ orderCode }}</span>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:10px;color:rgb(158,158,158);line-height:14px">Người nhận hàng</span><br>
+                                                                <span
+                                                                  style="font-size:12px;line-height:16px;font-weight:bold">{{ fullName }}</span>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td height="3"><img style="display:block"
+                                                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                                          alt="" border="0" height="3" width="20" class="CToWUd"></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:10px;color:rgb(158,158,158);line-height:16px">Số điện thoại</span><br>
+                                                                <span
+                                                                  style="font-size:12px;line-height:16px;font-weight:bold">{{ telephone }}</span>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td height="3"><img style="display:block"
+                                                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                                          alt="" border="0" height="5" width="20" class="CToWUd"></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:10px;color:rgb(158,158,158);line-height:16px">Địa chỉ</span><br>
+                                                                <span
+                                                                  style="font-size:12px;line-height:16px;font-weight:bold">{{ address }}, {{ ward }}, {{ district }}, {{ city }}</span>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td height="3"><img style="display:block"
+                                                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                                          alt="" border="0" height="5" width="20" class="CToWUd"></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:10px;color:rgb(158,158,158);line-height:16px">Đơn vị giao hàng</span><br>
+                                                                <span
+                                                                  style="font-size:12px;line-height:16px;font-weight:bold">{{ unitTransit }}</span>
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td height="3"><img style="display:block"
+                                                                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                                                  alt="" width="20" height="3" border="0"
+                                                                  class="CToWUd"></td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td height="3"><img style="display:block"
+                                                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                                          alt="" border="0" height="5" width="20" class="CToWUd"></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:10px;color:rgb(158,158,158);line-height:16px">Ghi chú</span><br>
+                                                                <span
+                                                                  style="font-size:12px;line-height:16px;font-weight:bold">{{ note }}</span>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td valign="top" width="9"><img style="display:block"
+                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                          alt="" border="0" height="10" width="9" class="CToWUd"></td>
+                      <td bgcolor="#f5f5f3" valign="top" width="10"><img style="display:block"
+                          src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                          alt="" border="0" height="10" width="10" class="CToWUd"></td>
+                      <td valign="top" width="270">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td style="font-size:14px;font-weight:bold;color:#bc2029" align="left" valign="top">
+                                HÓA ĐƠN CỦA BẠN</td>
+                            </tr>
+                            <tr>
+                              <td align="center" height="10" valign="middle"><img style="display:block"
+                                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                  alt="" border="0" height="10" width="170" class="CToWUd"></td>
+                            </tr>
+                            <tr>
+                              <td valign="top">
+                                <table style="border:1px solid rgb(221,221,221)" bgcolor="#ffffff" border="0"
+                                  cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="padding:0cm" align="left" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left" height="10"></td>
+                                                              <td colspan="2" align="left" height="10"></td>
+                                                              <td align="left" height="10"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" height="5"></td>
+                                                              <td colspan="2"
+                                                                style="font-size:11px;line-height:18px;font-family:'',Helvetica"
+                                                                align="left" height="5">
+                                                                Bạn trả bằng:<br>
+                                                                <span style="font-weight:bold;color:rgb(0,0,0)">{{ payment }}</span>
+                                                              </td>
+                                                              <td align="left" height="5"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" height="5"></td>
+                                                              <td colspan="2" align="left" height="5"></td>
+                                                              <td align="left" height="5"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" height="3"></td>
+                                                              <td colspan="2"
+                                                                style="border-top:1px dashed rgb(158,158,158)"
+                                                                align="left" height="3"></td>
+                                                              <td align="left" height="3"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" width="15"></td>
+                                                              <td style="font-family:'',Helvetica" align="left"
+                                                                width="171">
+                                                                <span
+                                                                  style="font-size:11px;color:rgb(158,158,158);line-height:21px">Chi
+                                                                  tiết</span>
+                                                              </td>
+                                                              <td style="font-family:'',Helvetica" align="left"
+                                                                width="80">
+                                                                <span
+                                                                  style="font-size:11px;color:rgb(158,158,158);line-height:28px">&nbsp;&nbsp;Số
+                                                                  lượng:</span>
+                                                              </td>
+                                                              <td align="left" width="15"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" height="3"></td>
+                                                              <td colspan="2" align="left" height="3"></td>
+                                                              <td align="left" height="3"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" height="5"></td>
+                                                              <td colspan="2"
+                                                                style="border-top:1px dashed rgb(158,158,158)"
+                                                                align="left" height="5"></td>
+                                                              <td align="left" height="5"></td>
+                                                            </tr>
+                                                            {{ listProduct }}
+                                                            <tr>
+                                                              <td align="right" width="15"></td>
+                                                              <td align="right">&nbsp;</td>
+                                                              <td align="right">&nbsp;</td>
+                                                              <td align="right" width="15"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" width="15"></td>
+                                                              <td align="left"
+                                                                style="font-family:Helvetica,'Arial',sans-serif;font-weight:normal;color:#000000">
+                                                                <span
+                                                                  style="font-size:11px;color:#000000;line-height:18px">Tổng
+                                                                  tạm tính</span>
+                                                              </td>
+                                                              <td align="left"
+                                                                style="font-family:Helvetica,'Arial',sans-serif;font-weight:normal;color:#000000">
+                                                                <span
+                                                                  style="font-size:11px;color:#000000;line-height:18px">&nbsp;&nbsp;₫
+                                                                  {{ totalBeforeFee }} </span>
+                                                              </td>
+                                                              <td align="left" width="15"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" width="15"></td>
+                                                              <td align="left"><span
+                                                                  style="font-size:11px;color:rgb(0,0,0);line-height:18px">Cước
+                                                                  phí giao hàng</span></td>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:11px;color:rgb(0,0,0);line-height:18px">&nbsp;&nbsp;₫
+                                                                  {{ fee }} </span>
+                                                              </td>
+                                                              <td align="left" width="15"></td>
+                                                            </tr>
+
+                                                            <tr
+                                                              style="font-family:Helvetica,'Arial',sans-serif;font-weight:normal;color:#000000">
+                                                              <td align="left" width="15"></td>
+                                                              <td align="left"><span
+                                                                  style="font-size:11px;line-height:18px">Hoa hồng</span>
+                                                              </td>
+                                                              <td align="left">
+                                                                <span style="font-size:11px;line-height:18px">-&nbsp;₫
+                                                                  {{ commission }} </span>
+                                                              </td>
+                                                              <td align="right" width="15"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" height="10"></td>
+                                                              <td colspan="2" align="left" height="10"></td>
+                                                              <td align="left" height="10"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" height="10"></td>
+                                                              <td colspan="2"
+                                                                style="border-top:1px dashed rgb(158,158,158)"
+                                                                align="left" height="10"></td>
+                                                              <td align="left" height="10"></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" width="15"></td>
+                                                              <td align="right">
+                                                                <span
+                                                                  style="font-size:12px;font-weight:bolder;color:rgb(0,0,0);line-height:28px">BẠN
+                                                                  TRẢ&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                                              </td>
+                                                              <td align="left">
+                                                                <span
+                                                                  style="font-size:12px;font-weight:bolder;color:rgb(0,0,0);line-height:28px">&nbsp;&nbsp;₫
+                                                                  {{ total }}</span>
+                                                              </td>
+                                                              <td align="left" width="15"></td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="left" valign="top">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left"><img style="display:block"
+                                                                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                                                  alt="" border="0" height="10" width="20"
+                                                                  class="CToWUd"></td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center" valign="middle" height="10"><img style="display:block"
+                                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                                  alt="" width="170" height="10" border="0" class="CToWUd"></td>
+                            </tr>
+
+                            <tr>
+
+                            </tr>
+
+
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td height="20"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td valign="top" width="45"><img style="display:block"
+                  src="https://ci4.googleusercontent.com/proxy/pMR9jndPFoUQq6twaxszUaMbbshVQvuUmb-8xUpINRhgF3lzJ8gYehGNOn36hbnP2sL1Lof0tIbtxLHL33k-3x49CgJX5quOhGLr_5DULJ-kVpA=s0-d-e1-ft#https://grabtaxi-marketing.s3.amazonaws.com/email/img/_blank.gif"
+                  alt="" border="0" height="10" width="20" class="CToWUd"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/293831592_5483170538412716_3029841272244985131_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=dkzAd8qxciEAX8tvaZB&_nc_ht=scontent.fsgn2-3.fna&oh=00_AT_MMAC46-r5chaP3xobS9EJ486aqKWjN8AWcHSdjvJOuw&oe=62D6667C"
+                  alt="E-receipt" style="border:0pt none" height="250" width="600" class="CToWUd a6T" tabindex="0">
+                <div class="a6S" dir="ltr" style="opacity: 0.01; left: 568.5px; top: 98px;">
+                  <div id=":1d5" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" role="button" tabindex="0"
+                    aria-label="Download attachment " data-tooltip-class="a1V" data-tooltip="Download">
+                    <div class="akn">
+                      <div class="aSK J-J5-Ji aYr"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
